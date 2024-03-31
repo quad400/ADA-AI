@@ -222,7 +222,7 @@ export default function Home() {
 
           <div className="flex flex-col space-y-4 w-full items-center justify-center">
             {brand.map((item) => (
-              <div className="flex space-x-6 px-6 py-[22px] justify-start items-center rounded-md w-full ring-1 ring-[#FFFFFF10] ">
+              <div key={item.label} className="flex space-x-6 px-6 py-[22px] justify-start items-center rounded-md w-full ring-1 ring-[#FFFFFF10] ">
                 <Image
                   alt={item.label}
                   src={item.logo}
